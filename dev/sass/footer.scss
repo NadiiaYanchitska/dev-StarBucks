@@ -3,7 +3,7 @@
     margin-top: auto;   
     
 &-row, 
-&-container{
+&-contacts {
     display: flex;
 }
 &-row {
@@ -11,7 +11,7 @@
 }
 &-nav {
     margin: 0 auto;
-    display: flex;
+     display: flex;
     justify-content: space-between;
     max-width: 761px;
     width: 100%;
