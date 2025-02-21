@@ -30,27 +30,33 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 80px;
+    line-height: 1.1;
 }
 
 h2 {
-    font-size: 2,37rem;
+    font-size: 62px;
+    line-height: 1.1;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 32px;
+    line-height: 1.32;
 }
 
 h4 {
-    font-size: 1,75rem;
+    font-size: 26px;
+    line-height: 1.23;
 }
 
 h5 {
-    font-size: 1,5rem;
+    font-size: 24px;
+    line-height: 1.46;
 }
 
 h6 {
-    font-size: 1.25rem;
+    font-size: 20px;
+    line-height: 1.63;
 }
 
 img {
@@ -64,7 +70,7 @@ a {
     }
 }
 .container {
-    max-width: 1281px;
+    max-width: 1274px;
     padding: 0 12px;
     margin-left: auto;
     margin-right: auto;
