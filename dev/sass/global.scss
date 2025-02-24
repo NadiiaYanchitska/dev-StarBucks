@@ -30,32 +30,32 @@ h6 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 5rem;
     line-height: 1.1;
 }
 
 h2 {
-    font-size: 62px;
+    font-size: 3.875rem;
     line-height: 1.1;
 }
 
 h3 {
-    font-size: 32px;
-    line-height: 1.32;
+    font-size: 2rem;
+    line-height: 2;
 }
 
 h4 {
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 1.23;
 }
 
 h5 {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.46;
 }
 
 h6 {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.63;
 }
 
@@ -69,6 +69,100 @@ a {
         color: $primary-color
     }
 }
+
+.btn {
+    color: $title-color;
+    font-size: 24px;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    padding: 23px 54px;
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    transition: .3s;
+    position: relative;
+
+    &.btn-primary {
+        background-image: linear-gradient(204deg, #237429 0%, #35c66B 100%);
+        font-weight: 600;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        height: 0;
+        width: 0;
+        background-color: #ffffff6b;
+        transform: skew(-25deg, 0);
+        transition: .3s;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+
+    &.btn-secondary {
+        position: relative;
+        background-color: $bg-color;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            background-image: linear-gradient(140deg, #BBB3B3 0%, #121517 100%);
+            z-index: -1;
+            border-radius: 40px;
+        }
+        
+        &:hover {
+            &::after {
+                animation: .3s btn-secondary 1;
+            }
+        }
+        
+    }
+}
+
+@keyframes btn-secondary {
+    0% {
+        height: 0;
+        width: 0;
+        transform: skew(-25deg, 0);
+        right: 0;
+    }
+
+    10% {
+        height: 0;
+        width: 0;
+        transform: skew(-25deg, 0);
+        right: 35px;
+    }
+
+    15% {
+        height: 100%;
+        width: 15px;
+        transform: skew(-25deg, 0);
+        right: 55px;
+    }
+
+    90% {
+        transform: skew(-25deg, 0);
+        right: calc(100% - 35px);
+        height: 100%;
+        width: 0;
+    }
+
+    100% {
+        transform: skew(-25deg, 0);
+        right: calc(100% - 35px);
+        height: 0;
+        width: 0;
+    }
+}
+
 .container {
     max-width: 1274px;
     padding: 0 12px;
@@ -90,6 +184,12 @@ a {
             height: 37px;
         }
     }
+}
+
+.gradient { 
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(204deg, #237249 0, #35c66b 100%);
 }
 
 ::selection {
