@@ -1,10 +1,21 @@
 header {
     padding: 48px 0;
     position: relative;
+
     >.container {
         display: flex;
         align-items: center;
         gap: 94px;
+		position: relative;
+		&::before {
+			@include template-light;
+			width: 586px;
+			height: 653px;
+			background: url(./assets/img/decoration__banner-light-title.png) center no-repeat;
+			left: 0;
+			top: -150px;
+			transform: none;
+		}
     }
 
     .btn-burger {
