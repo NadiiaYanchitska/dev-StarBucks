@@ -35,7 +35,7 @@
             @include template-light;
             width: 603px;
             height: 603px;
-            background: url(./assets.img/decoration__banner-btn-row.png) center no-repeat;
+            background: url(./assets/img/decoration__banner-btn-row.png) center no-repeat;
             left: 100px;
             top: 0;
             transform: translate(0, -50%);
@@ -67,7 +67,7 @@
             @include template-light;
             width: 479px;
             height: 479px;
-            background: url(./assets.img/decoration__banner-light-img.png) center no-repeat;
+            background: url(./assets/img/decoration__banner-light-img.png) center no-repeat;
             left: -160px;
             top: 160px;
             transform: translate(0, -50%);
@@ -77,7 +77,7 @@
             @include template-light;
             width: 676px;
             height: 676px;
-            background: url(./assets.img/decoration__banner-light-img_md.png) center no-repeat;
+            background: url(./assets/img/decoration__banner-light-img_md.png) center no-repeat;
             left: -50px;
             top: calc(100% - 115px);
             transform: translate(0, -50%);
@@ -87,9 +87,16 @@
     }
 
     .banner-discount {
-        width: 184px;
-        height: 184px;
-        background: url(./assets/img/bg-discount.svg) center no-repeat;
+       // width: 184px;
+       // height: 184px;
+       
+        --max-size: 184px;
+        --size: 14.154vw;
+        width: var(--size);
+        height: var(--size);
+        max-width: var(--max-size);
+        max-height: var(--max-size);
+        background: url(./assets/img/bg-discount.svg) center / 100% no-repeat;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -101,6 +108,7 @@
         position: absolute;
         top: 0;
         right: 38px;
+        
         &:before {
         content: "";
         position: absolute;
@@ -113,6 +121,15 @@
         z-index: -1;
         }
     }
+}
+
+.banner-line {
+    width: 1102px;
+    height: 677px;
+    position: absolute;
+    top: 200px;
+    right: -470px;
+    z-index: -1;
 }
 
 

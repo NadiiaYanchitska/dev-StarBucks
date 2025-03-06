@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024.99px) {
     header {
         padding: 34px 0;
         > .container {
@@ -61,6 +61,13 @@
         }
     }
 }
+
+    .banner {
+        .container {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
 
     .footer {
         padding: 37px 0 7px;
