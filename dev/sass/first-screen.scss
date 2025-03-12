@@ -110,7 +110,7 @@
         right: 38px;
         z-index: 1;
         
-        &:before {
+       /* &:before {
         content: "";
         position: absolute;
         width: calc(100% - 42px);
@@ -120,7 +120,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
-        }
+        } */
     }
 }
 
