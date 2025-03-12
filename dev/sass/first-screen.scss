@@ -14,6 +14,7 @@
     }
 
     h1 {
+        font-size: min(6vw, 80px);
         font-size: 800;
         margin-bottom: 54px;
         position: relative;
@@ -29,6 +30,7 @@
     &-btn-group {
         gap: 16px;
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 54px;
         position: relative;
         &:before {
@@ -87,9 +89,6 @@
     }
 
     .banner-discount {
-       // width: 184px;
-       // height: 184px;
-       
         --max-size: 184px;
         --size: 14.154vw;
         width: var(--size);
@@ -104,10 +103,12 @@
         text-align: center;
         color: #fff;
         font-size: 55px;
+        font-size: min(4.231vw, 55px);
         font-weight: 500;
         position: absolute;
         top: 0;
         right: 38px;
+        z-index: 1;
         
         &:before {
         content: "";
