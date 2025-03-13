@@ -74,7 +74,7 @@
         }
 
         h1 {
-            font-size: min(12vw, 48px);
+            font-size: min(9vw, 64px);
             margin-bottom: 36px;
         }
 
@@ -97,19 +97,17 @@
             display: none;
         }
 
-        .banner-discount {
-            right: 100px;
-        }
+    
 
         .banner-img:before {
             display: none;
         }
 
         .banner-line {
+            bottom: -8vw;
+            right: -5vw;
             width: 100%;
-            left: 8vw;
-            bottom: -21vw;
-            top: initial;
+            height: auto;
         }
 
         &-statistic-item {
@@ -123,6 +121,10 @@
         .banner-statistic__subtitle {
             font-size: 12px;
         }
+    }
+
+    .accent-label {
+        right: 100px;
     }
 
     .footer {

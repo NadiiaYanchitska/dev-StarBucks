@@ -1,7 +1,12 @@
 @media screen and (max-width: 575.99px) {
     .banner {
         .banner-line {
-            bottom: -65vw;
+            bottom: -13vw;
+            right: -5vw;
+        }
+
+        .banner h1 {
+            font-size: min(12vw, 48px);
         }
     }
 }
