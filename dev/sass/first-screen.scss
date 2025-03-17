@@ -85,12 +85,12 @@
             transform: translate(0, -50%);
         }
         .banner-line {
-            width: 1102px;
-            height: 677px;
             position: absolute;
-            top: 200px;
-            right: -470px;
-            z-index: -1;
+            right: -280px;
+            bottom: -258px;
+            z-index: -2;
+            width: 910px;
+            height: 676px;
         }
 
         .accent-label {
