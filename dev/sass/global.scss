@@ -19,6 +19,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    margin-bottom: $section-margin;
+}
+
 h1,
 h2,
 h3,
@@ -58,6 +62,20 @@ h5 {
 h6 {
     font-size: 1.25rem;
     line-height: 1.63;
+}
+
+.template-title {
+    font-size: min(6vw, 80px);
+    font-weight: 800;
+    position: relative;
+}
+
+.template-description {
+    @extend h6;
+    color: #D9D9D9;
+    font-weight: 400;
+    margin-bottom: 54px;
+    max-width: 480px;
 }
 
 img {
@@ -146,12 +164,6 @@ a {
     }
 }
 
-.template-title {
-    font-size: min(6vw, 80px);
-    font-weight: 800;
-    letter-spacing: -2.4px;
-}
-
 .gradient-text { 
     background-clip: text;
     color: transparent;
@@ -224,3 +236,4 @@ a {
     color: $bg-color;
     background-color: $primary-color;
 }
+

@@ -1,30 +1,33 @@
 .banner {
-    padding-bottom: 100px;
     position: relative;
 
     .container {
         display: flex;
+        justify-content: space-between;
         align-items: flex-start;
         gap: 24px;
-        justify-content: space-between;
     }
 
     &-content{
-       max-width: 574px;
+       max-width: 580px;
     }
 
-    h1 {
-        font-size: min(6vw, 80px);
-        font-size: 800;
+    .template-title {
         margin-bottom: 54px;
-        position: relative;
+       
+        &::before {
+            @include template-light;
+            width: 586px;
+            height: 653px;
+            background: url(./assets/img/decoration__banner-light-title.png) center no-repeat;
+            left: 0;
+            top: -200px;
+            transform: none;
+        }
     }
 
-    &-description {
-        @extend h6;
-        color: #D9D9D9;
-        font-weight: 400;
-        margin-bottom: 54px;
+    .template-description {
+        max-width: 572px;
     }
 
     &-btn-group {
@@ -65,6 +68,7 @@
     .banner-img {
         margin-bottom: 43px;
         position: relative;
+
         &:before {
             @include template-light;
             width: 479px;
