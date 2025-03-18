@@ -24,11 +24,18 @@ $section-mobile-margin: 64px;
     z-index: -1;
 }
 
-@mixin clip-right {
-    -webkit-mask: url(./assets/img/we-make___clip-right.svg);
-    -o-mask: url(./assets/img/we-make___clip-right.svg);
-    -moz-mask: url(./assets/img/we-make___clip-right.svg);
-    mask: url(./assets/img/we-make___clip-right.svg);
+@mixin clip-top-right {
+    -webkit-mask: url(./assets/img/we-make___clip-top-right.svg);
+    -o-mask: url(./assets/img/we-make___clip-top-right.svg);
+    -moz-mask: url(./assets/img/we-make___clip-top-right.svg);
+    mask: url(./assets/img/we-make___clip-top-right.svg);
+}
+
+@mixin clip-bottom-right {
+    -webkit-mask: url(./assets/img/we-make___clip-bottom-right.svg);
+    -o-mask: url(./assets/img/we-make___clip-bottom-right.svg);
+    -moz-mask: url(./assets/img/we-make___clip-bottom-right.svg);
+    mask: url(./assets/img/we-make___clip-bottom-right.svg);
 }
 
 .white-section {
