@@ -107,6 +107,7 @@ button {
     transition: .3s;
     position: relative;
     display: inline-flex;
+    align-items: center;
 
     &:after {
         @include template-light;

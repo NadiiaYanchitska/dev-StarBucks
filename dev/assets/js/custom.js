@@ -8,13 +8,13 @@ burger.addEventListener('click', ()=> {
 
 /*modal*/
 
-const btnTrigerProcess = document.querySelector('[data-triger-modal="process"]');
+const btnModalTriger = document.querySelectorAll('[data-triger-modal="process"]');
 const overlay = document.querySelector('.overlay')
 const body = document.querySelector('body')
 const modal = document.querySelector('.modal')
 const btnModalClose = document.querySelector('[data-modal="close"]') 
 
-console.log(btnModalClose);
+console.log(btnModalTriger);
 
 function showModal(event) {
     overlay.classList.add('show')
