@@ -253,6 +253,30 @@ button {
     overflow: hidden;
 }
 
+.g-0 {
+    gap: 0;
+}
+
+.g-1 {
+    gap: 1rem;
+}
+
+.g-2 {
+    gap: 2rem;
+}
+
+.g-3 {
+    gap: 3rem;
+}
+
+.g-4 {
+    gap: 4rem;
+}
+
+.g-5 {
+    gap: 5rem;
+}
+
 ::selection {
     color: $bg-color;
     background-color: $primary-color;
