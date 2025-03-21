@@ -29,6 +29,9 @@
     visibility: hidden;
     transition: .3s;
 
+    max-width: 991px;
+    width: 100%;
+
     &.show {
         opacity: 1;
         visibility: visible;
@@ -37,4 +40,7 @@
 
 .modal-content {
     margin-bottom: 24px;
+    video {
+        width: 100%;
+    }
 }

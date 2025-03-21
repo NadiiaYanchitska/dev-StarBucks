@@ -1,5 +1,39 @@
-const burger = document.querySelector('#btn-burger')
-const mobileContainer = document.querySelector('#mobile-container')
+const burger = document.querySelector('#btn-burger');
+const mobileContainer = document.querySelector('#mobile-container');
+const video = document.querySelector('#video');
+const play = document.querySelector('#play');
+const stop = document.querySelector('#stop');
+const pause = document.querySelector('#pause');
+
+function playVideo() {
+    video.play();
+}
+
+function stopVideo() {
+    video.pause(); 
+    video.currentTime = 0; 
+}
+
+function pauseVideo() {
+    video.pause();
+}
+
+play.addEventListener('click', () => {
+    playVideo();
+    console.log('play');
+});
+
+stop.addEventListener('click', () => {
+    stopVideo(); 
+    console.log('stop');
+});
+
+pause.addEventListener('click', () => {
+    pauseVideo(); 
+    console.log('pause');
+});
+
+
 
 burger.addEventListener('click', ()=> {
     burger.classList.toggle('active')

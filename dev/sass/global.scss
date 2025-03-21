@@ -23,6 +23,8 @@ section {
     margin-bottom: $section-margin;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -251,6 +253,14 @@ button {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    h3 {
+        line-height: 1;
+    }
 }
 
 .g-0 {
