@@ -1,22 +1,55 @@
 const burger = document.querySelector('#btn-burger');
 const mobileContainer = document.querySelector('#mobile-container');
-const video = document.querySelector('#video');
+const processVideo = document.querySelector('#video');
 const play = document.querySelector('#play');
 const stop = document.querySelector('#stop');
 const pause = document.querySelector('#pause');
 
+const html = document.querySelector('#html');
+const css = document.querySelector('#css');
+const js = document.querySelector('#js');
+
+const rengeInput = document.querySelector('#volume-range')
+
+
+function currentHTML() {
+    video.currentTime = 180; 
+}
+
+function currentCSS() {
+    video.currentTime = 60; 
+}
+
+
+function currentJS() {
+    video.currentTime = 120; 
+}
+
+
 function playVideo() {
-    video.play();
+    processVideo.play();
 }
 
 function stopVideo() {
-    video.pause(); 
-    video.currentTime = 0; 
+    processVideo.pause();  
 }
 
 function pauseVideo() {
-    video.pause();
+    processVideo.pause();
 }
+
+html.addEventListener('click', ()=> {
+    currentHTML()
+    video.volume - 0.5;
+})
+
+css.addEventListener('click', ()=> {
+    currentCSS()
+})
+
+js.addEventListener('click', ()=> {
+    currentJS()
+})
 
 play.addEventListener('click', () => {
     playVideo();
@@ -56,10 +89,8 @@ function closeModal() {
     const openModal = document.querySelector('.modal.show');
     body.classList.remove('overflow-hidden');
     overlay.classList.remove('show');
-    
-    
-        openModal.classList.remove('show');
-    
+    openModal.classList.remove('show');
+    stopVideo();    
 }
 
 
@@ -71,12 +102,33 @@ ModalTrigers.forEach(item => {
         const modal = document.querySelector('#' + datatriger);
 
 
-            showModal();
-           modal.classList.add('show');        
-    });
+           showModal();
+           
+           
+           if(modal.classList.contains('video-process')) {
+            modal.classList.add('show'); 
+            playVideo()
+           } else {
+            modal.classList.add('show')
+           }
+    })
 });
 
 modalClose.forEach(close => {
     close.addEventListener('click', closeModal);
 });
+
+const x = 4
+
+if (x == 2) {
+    console.log('x == 2');
+} else if (x == 4) {
+    console.log('x == 4');
+} else if (x == 6) {
+    console.log('x == 6');
+} else if (x == 8) {
+    console.log('x == 8');
+} else {
+    console.log('не задовільняє жодних умов');
+}
 

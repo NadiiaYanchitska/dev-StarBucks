@@ -258,7 +258,7 @@ gulp.task('serve', gulp.series('build', function() {
     gulp.watch( // следим за изображениями
         [
             dirs.source + '/uploads/**/*.{gif,png,jpg,jpeg,svg,mp4}',
-            dirs.source + '/uploads/*.{gif,png,jpg,jpeg,svg,mp4}',
+            dirs.source + '/uploads/*.{gif,png,jpg,jpeg,svg,mp}',
         ],
         gulp.series('imguploads', reloader) // при изменении оптимизируем, копируем и обновляем в браузере
     );

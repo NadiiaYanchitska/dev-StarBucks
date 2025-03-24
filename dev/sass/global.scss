@@ -100,7 +100,7 @@ button {
 .btn {
     color: $title-color;
     font-size: 24px;
-    border-radius: 50px;
+    border-radius: 25px;
     border: none;
     text-decoration: none;
     padding: 23px 54px;
@@ -110,6 +110,16 @@ button {
     position: relative;
     display: inline-flex;
     align-items: center;
+   
+    &.btn-close {
+        top: 0;
+        right: 0;
+        background: $secondary-color;
+        position: absolute;
+        border-radius: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
 
     &:after {
         @include template-light;
@@ -157,7 +167,7 @@ button {
 
         &:after {
             background-image: url(./assets/img/btn-secondary-hover.svg);
-        }
+        }  
     }
 }
 
@@ -181,6 +191,7 @@ button {
         svg {
             height: 37px;
         }
+        
     }
 }
 
