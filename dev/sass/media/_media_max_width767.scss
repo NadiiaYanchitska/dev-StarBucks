@@ -10,4 +10,14 @@
         --size: 13.3vw;
         font-size: 18px;
     }
+
+    .carousel-wrapper {
+        .swiper {
+           max-width: 277px;
+        }
+   }
+
+   .swiper-navigaton {
+    max-width: 430px;
+}
 }

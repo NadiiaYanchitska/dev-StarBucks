@@ -1,3 +1,15 @@
+@media screen and (max-width: 1560.99px) {
+    .carousel-wrapper {
+         .swiper {
+            max-width: 929px;
+         }
+    }
+
+    .swiper-navigaton {
+        max-width: 1168px;
+    }
+}
+
 @media screen and (max-width: 1399.99px) {
     .banner .template-title {
         margin-bottom: 48px;

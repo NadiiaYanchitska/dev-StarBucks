@@ -132,3 +132,35 @@ if (x == 2) {
     console.log('не задовільняє жодних умов');
 }
 
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 48,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+
+        1026: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+          },
+
+        1215: {
+          slidesPerView: 3,
+          spaceBetween: 48,
+        },
+
+        1560: {
+          slidesPerView: 4,
+          spaceBetween: 48,
+        }
+    }
+
+  });

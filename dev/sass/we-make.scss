@@ -9,6 +9,7 @@
     &__img-box {
         max-width: 465px;
         position: relative;
+        margin-bottom: 100px;
 
         img {
           @include clip-top-right;
