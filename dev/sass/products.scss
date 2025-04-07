@@ -37,7 +37,7 @@
     text-align: center;
     max-width: 277px;
 
-    &-img {
+    &__img {
         --size: 186px;
         height: var(--size);
         width: var(--size);
@@ -55,15 +55,15 @@
         }
     }
 
-    &-title {
+    &__title {
         margin-bottom: 0;
     }
     
-    &-description {
+    &__description {
         font-weight: 400;
     }
 
-    &-value {
+    &__value {
         display: flex;
         gap: 35px;
         justify-content: space-between;
@@ -79,7 +79,7 @@
     
     .btn {
         font-size: 17px;
-        padding: 23px 38px;
+        padding: 14px 24px;
     }
 
 }
