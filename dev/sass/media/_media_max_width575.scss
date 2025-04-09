@@ -20,29 +20,7 @@
 }
 
 .product {
-    padding: 38px 20px 22px;
-    max-width: 184px;
-
-    &__img {
-        --size: 120px;
-        width: var(--size);
-        height: var(--size);
-
-        img {
-            width: 120px;
-            height: 160px;
-        }
-    }
-
-    &__title,
-    &__price {
-        font-size: 22px;
-    }
-
-    &__description,
-    &__volume {
-        font-size: 14px;
-    }
+   
 
     .btn {
         padding: 12px 23px;
